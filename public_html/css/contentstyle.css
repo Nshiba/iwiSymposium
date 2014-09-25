@@ -1,0 +1,25 @@
+.outline {
+	width: 90%;
+	margin-left: 5%;
+	margin-top: 20px;
+	padding: 20px 5%;
+	border-top: 1px solid #808080;
+	border-bottom: 1px solid #808080;
+}
+.outline-name{
+	height: 27px;
+}
+.outline-name ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.outline-name li{
+	float: left;
+	padding: 0;
+	margin: 0;
+}
+.kadai-title{
+	padding: 5px 0 0 10px; 
+	font-weight: bold;
+}

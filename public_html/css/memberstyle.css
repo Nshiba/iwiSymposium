@@ -1,16 +1,17 @@
+.member-item{
+	width: 90%;
+	margin-left: 5%;
+}
 section{
 	margin-top: 20px;
 	padding: 20px 0;
 	border-top: 1px solid #808080;
 	border-bottom: 1px solid #808080;
 }
-.member-item{
-	width: 90%;
-	margin-left: 5%;
-}
-section img{
-	width: 100%;
-	height: 10px;
+.outline{
+	width: 80%;
+	margin-left: 10%;
+	margin-top: 20px;
 }
 section ul{
 	list-style: none;
@@ -24,27 +25,6 @@ section li{
 }
 .syozoku{
 	margin-top: 20px;
-}
-.outline{
-	width: 80%;
-	margin-left: 10%;
-	margin-top: 20px;
-}
-.outline-name{
-	width: 100%;
-	margin-top: 20px;
-	border-bottom: 5px solid #282828;
-}
-.outline-text{
-	height: 25px;
-	width: 150px;
-	margin: 0;
-	padding-top: 5px; 
-	text-align: center;
-	font-weight: bold;
-	color: #ffffff;
-	background-image: url("../img/titlebar.png");
-	background-size: 100% 100%;
 }
 .senmon-list{
 	margin-top: 20px;
