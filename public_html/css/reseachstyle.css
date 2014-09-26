@@ -1,12 +1,17 @@
 #floating-menu {
 	position: absolute;
-	width: 20%;
+	width: 260px;
 	top: 300px;
 	left: 5%;
 
-	-moz-box-shadow: 5px 5px 7px #454545;
+/*	border-top: 5px solid #006766;
+	border-left: 5px solid #006766;
+	border-right: 5px solid #003334;
+	border-bottom: 5px solid #003334;*/
+
+/*	-moz-box-shadow: 5px 5px 7px #454545;
 	-webkit-box-shadow: 5px 5px 7px #454545;
-	box-shadow: 5px 5px 7px #454545;
+	box-shadow: 5px 5px 7px #454545;*/
 
 	z-index: 9999;
 }
@@ -18,8 +23,45 @@
 #floating-menu{
 	display: block;
 }
+.menu-item{
+	border-bottom: 1px solid #ffffff; 
+	border-top: 1px solid #ffffff; 
+}
+.menu-item-name{
+	position: absolute;
+	color: #ffffff;
+	left: 50px;
+	font-weight: bold;
+}
+#item-haikei{
+	top: 36px;
+}
+#item-gruop{
+	top: 68px;
+}
+#item-iti{
+	top: 100px;
+}
+#item-mirai{
+	top: 132px;
+}
+#item-mokuteki{
+	top: 164px;
+}
+#item-a{
+	bottom: 91px;
+}
+#item-b{
+	bottom: 59px;
+}
+#item-c{
+	bottom: 27px;
+}
+#item-d{
+	bottom: -5px;
+}
 #haikei{
-	height: 425px;
+	overflow: auto;
 }
 .outline {
 	width: 90%;
@@ -31,7 +73,7 @@
 	border-bottom: 1px solid #808080;
 }
 .outline-name{
-	height: 27px;
+	border-bottom: 0;
 }
 .outline-name ul{
 	list-style: none;
@@ -45,7 +87,8 @@
 }
 .outline-content{
 	width: 90%;
-	margin : 10px 5%;
+	padding: 10px 5%;
+	border-top: solid 5px #282828;
 }
 #saigailist{
 	list-style: decimal;
@@ -60,4 +103,7 @@
 }
 #kenkyuhou{
 	margin-top: 100px;
+}
+.kadailist{
+	height: 25px;
 }
