@@ -13,9 +13,12 @@
 
     z-index: 9999;
 }
-
+#haikei{
+	height: 425px;
+}
 .outline {
 	width: 90%;
+	height: 100%;
 	margin-left: 5%;
 	margin-top: 20px;
 	padding: 20px 5%;
@@ -34,6 +37,17 @@
 	float: left;
 	padding: 0;
 	margin: 0;
+}
+.outline-content{
+	width: 90%;
+	margin : 10px 5%;
+}
+#saigailist{
+	list-style: decimal;
+	margin: 0 0 10px 40px;
+}
+#saigailist li{
+	float: none;
 }
 .kadai-title{
 	padding: 5px 0 0 10px; 

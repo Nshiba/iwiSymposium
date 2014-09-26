@@ -6,9 +6,11 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="css/bootstrap.css" />
 		<link rel="stylesheet" href="css/main.css" />
+		<link rel="stylesheet" href="css/reseachstyle.css" />
 		<script type="text/javascript" src="https://www.google.com/jsapi"></script>
 		<script type="text/javascript" src="js/bootstrap.js" ></script>
 		<script type="text/javascript" src="js/jquery.js" ></script>
+		<script type="text/javascript" src="js/scrollmenu.js" ></script>
 	</head>
 	<body>
 		<header>
@@ -18,12 +20,123 @@
 					<ul>
 						<li><a href="index.html"><img src="img/logo/Top.png" alt="Top" /></a></li>
 						<li><a href="member.html"><img src="img/logo/Member.png" alt="Member" /></a></li>
-						<li><a href="content.html"><img src="img/logo/Content.png" alt="Content" /></a></li>
 						<li><a href="research.html"><img src="img/logo/Reseach.png" alt="Research" /></a></li>
 						<li><a href="theday.html"><img src="img/logo/TheDay.png" alt="TheDay" /></a></li>
 					</ul>
 				</nav>
 			</div>
 		</header>
+
+		<div class="container">
+			<div id="floating-menu">
+				<ul>
+					<li>
+						<p>研究内容</p>
+						<ul>
+							<li><p>研究の背景</p></li>
+							<li><p>研究グループ</p></li>
+							<li><p>研究の目的</p></li>
+							<li><p>研究の位置付け</p></li>
+							<li><p>研究の将来性</p></li>
+						</ul>
+					</li>
+					<li>
+						<p>研究計画・方法</p>
+						<ul>
+							<li><p>課題A</p></li>
+							<li><p>課題B</p></li>
+							<li><p>課題C</p></li>
+							<li><p>課題D</p></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div class="row">
+				<div class="col-md-9 col-md-offset-3">
+					<section id="kenkyunaiyo">
+						<h2><span style="padding-left: 40px; ">研究内容</span></h2>
+						<img class="border-img" src="img/name-border.jpg" alt="border" />
+						<div id="haikei" class="outline">
+							<div class="outline-name">
+								<p class="outline-text">研究の背景</p>	
+								<div class="outline-content"> 
+									<p>既存の防災および災害対応に関するICTのフレームワークは，</p>
+									<ul id="saigailist">
+										<li>事前予測システム</li>
+										<li>発災直後の対応</li>
+										<li>発災後の長期的ケア</li>
+									</ul>
+									<p>の３つ分野が乖離され，別々の分野として取り扱われていた．
+									</p><p>
+										こういった現状はある程度予測される災害であっても連携と情報共有が有効に行われず，被災エリアの迅速な特定と二次災害リスクの計算や災害後の長期的支援や被災者支援者ケアと言う点の議論が欠如していたといえる．
+										さらには設置コストと費用対効果が考慮される本来守るべき市民ひとりの目線ではなく，値段が高く高性能すぎるスペックや本来必要数より過剰に災害検知設備を投資してしまうなどの弊害があった．
+									</p><p>
+										本研究はそういった研究指向型で分断された防災減災システムを「発災前」，「発災直後」，「発災後」の<span style="text-decoration: underline;">長期間を時系列で結び，実社会と人を中心に再構成する</span>ことを目的とする．</p><p>
+										本研究分野は<strong>Project for Active Communication and Technology Framework against Long-Term Disaster Problems:ProACT</strong>と名付け異分野の専門家を中心に議論して研究を進める．
+
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="outline">
+							<div class="outline-name">
+								<p id="group" class="outline-text">研究グループ</p>	
+							</div>
+						</div>
+						<div class="outline">
+							<div class="outline-name">
+								<p id="mokuteki" class="outline-text">研究の目的</p>	
+							</div>
+						</div>
+						<div class="outline">
+							<div class="outline-name">
+								<p id="itiduke" class="outline-text">研究の位置付け</p>	
+							</div>
+						</div>
+						<div class="outline">
+							<div class="outline-name">
+								<p id="mirai" class="outline-text">研究の将来性</p>	
+							</div>
+						</div>
+					</section>
+					<section id="kenkyuhou">
+						<h2><span style="padding-left: 40px; ">研究計画・方法</span></h2>
+						<img class="border-img" src="img/name-border.jpg" alt="border" />
+						<div class="outline">
+							<div class="outline-name">
+								<ul>
+									<li><p id="akadai" class="outline-text">課題A</p></li>	
+									<li><p class="kadai-title">長期的な防災センシング技術</p></li>
+								</ul>
+							</div>
+						</div>
+						<div class="outline">
+							<div class="outline-name">
+								<ul>
+									<li><p id="bkadai" class="outline-text">課題B</p></li>	
+									<li><p class="kadai-title">多種センサ・文書データ時系列解析からのエリア危険度の共有技術</p></li>
+								</ul>
+							</div>
+						</div>
+						<div class="outline">
+							<div class="outline-name">
+								<ul>
+									<li><p id="ckadai" class="outline-text">課題C</p></li>	
+									<li><p class="kadai-title">発災後の危険を住民に知らせる迅速な情報共有システム</p></li>
+								</ul>
+							</div>
+						</div>
+						<div class="outline">
+							<div class="outline-name">
+								<ul>
+									<li><p id="dkadai" class="outline-text">課題D</p></li>	
+									<li><p class="kadai-title">災害後の情報共有アプリケーションフレームワーク</p></li>
+								</ul>
+							</div>
+						</div>
+					</section>
+				</div>
+			</div>
+		</div>
 	</body>
 </html>
