@@ -31,66 +31,66 @@
 			<div id="floating-menu">
 				<ul>
 					<li>
-						<p>研究内容</p>
+						<a href="#kenkyunaiyo"><p class="midashi menu-item">研究内容</p></a>
 						<ul>
 							<li>
-								<ul class="menu-item">
-									<li><img src="img/migi.jpg" alt="migi" /></li>
-									<li><p id="item-haikei" class="menu-item-name">研究の背景</p></li>
-								</ul>
+								<a href="#haikei"><ul class="menu-item">
+										<li><img src="img/migi.jpg" alt="migi" /></li>
+										<li><p id="item-haikei" class="menu-item-name">研究の背景</p></li>
+									</ul></a>
 							</li>
 							<li>
-								<ul class="menu-item">
+								<a href="#group"><ul class="menu-item">
 									<li><img src="img/migi.jpg" alt="migi" /></li>
 									<li><p id="item-gruop" class="menu-item-name">研究グループ</p></li>
-								</ul>
+								</ul></a>
 							</li>
 							<li>
-								<ul class="menu-item">
+								<a href="#mokuteki"><ul class="menu-item">
 									<li><img src="img/migi.jpg" alt="migi" /></li>
 									<li><p id="item-mokuteki" class="menu-item-name">研究の目的</p></li>
-								</ul>
+								</ul></a>
 							</li>
 							<li>
-								<ul class="menu-item">
+								<a href="#itiduke"><ul class="menu-item">
 									<li><img src="img/migi.jpg" alt="migi" /></li>
 									<li><p id="item-iti" class="menu-item-name">研究の位置付け</p></li>
-								</ul>
+								</ul></a>
 							</li>
 							<li>
-								<ul class="menu-item">
+								<a href="#mirai"><ul class="menu-item">
 									<li><img src="img/migi.jpg" alt="migi" /></li>
 									<li><p id="item-mirai" class="menu-item-name">研究の将来性</p></li>
-								</ul>
+								</ul></a>
 							</li>
 						</ul>
 					</li>
 					<li>
-						<p>研究計画・方法</p>
+						<a href="#kenkyuhou"><p class="midashi menu-item">研究計画・方法</p></a>
 						<ul>
 							<li>
-								<ul class="menu-item">
+								<a href="#akadai"><ul class="menu-item">
 									<li><img src="img/migi.jpg" alt="migi" /></li>
 									<li><p id="item-a" class="menu-item-name">課題A</p></li>
-								</ul>
+								</ul></a>
 							</li>
 							<li>
-								<ul class="menu-item">
+								<a href="#bkadai"><ul class="menu-item">
 									<li><img src="img/migi.jpg" alt="migi" /></li>
 									<li><p id="item-b" class="menu-item-name">課題B</p></li>
-								</ul>
+								</ul></a>
 							</li>
 							<li>
-								<ul class="menu-item">
+								<a href="#ckadai"><ul class="menu-item">
 									<li><img src="img/migi.jpg" alt="migi" /></li>
 									<li><p id="item-c" class="menu-item-name">課題C</p></li>
-								</ul>
+								</ul></a>
 							</li>
 							<li>
-								<ul class="menu-item">
+								<a href="#dkadai"><ul class="menu-item last-item">
 									<li><img src="img/migi.jpg" alt="migi" /></li>
 									<li><p id="item-d" class="menu-item-name">課題D</p></li>
-								</ul>
+								</ul></a>
 							</li>
 						</ul>
 					</li>
@@ -123,30 +123,37 @@
 								</div>
 							</div>
 						</div>
-						<div class="outline">
+						<div id="group" class="outline">
 							<div class="outline-name">
-								<p id="group" class="outline-text">研究グループ</p>	
+								<p class="outline-text">研究グループ</p>	
+								<div class="outline-content"> 
+									<p>本グループは</p>
+									<ul>
+										<li>長期的防災モニタリング基盤</li>
+										<li>発災直後の情報共有基盤</li>
+										<li>発災後の長期的支援基盤</li>
+									</ul>
+									<p>の3つの分野を詳しく掘り下げる．その上で連携を取り長期的な災害に対する情報共有基盤を構築する．</p>
+								</div>
+							</div>
+						</div>
+						<div id="mokuteki" class="outline">
+							<div class="outline-name">
+								<p class="outline-text">研究の目的</p>	
 								<div class="outline-content"> 
 								</div>
 							</div>
 						</div>
-						<div class="outline">
+						<div id="itiduke" class="outline">
 							<div class="outline-name">
-								<p id="mokuteki" class="outline-text">研究の目的</p>	
+								<p class="outline-text">研究の位置付け</p>	
 								<div class="outline-content"> 
 								</div>
 							</div>
 						</div>
-						<div class="outline">
+						<div id="mirai" class="outline">
 							<div class="outline-name">
-								<p id="itiduke" class="outline-text">研究の位置付け</p>	
-								<div class="outline-content"> 
-								</div>
-							</div>
-						</div>
-						<div class="outline">
-							<div class="outline-name">
-								<p id="mirai" class="outline-text">研究の将来性</p>	
+								<p class="outline-text">研究の将来性</p>	
 								<div class="outline-content"> 
 								</div>
 							</div>
@@ -155,40 +162,40 @@
 					<section id="kenkyuhou">
 						<h2><span style="padding-left: 40px; ">研究計画・方法</span></h2>
 						<img class="border-img" src="img/name-border.jpg" alt="border" />
-						<div class="outline">
+						<div id="akadai" class="outline">
 							<div class="outline-name">
 								<ul class="kadailist">
-									<li><p id="akadai" class="outline-text">課題A</p></li>	
+									<li><p class="outline-text">課題A</p></li>	
 									<li><p class="kadai-title">長期的な防災センシング技術</p></li>
 								</ul>
 								<div class="outline-content"> 
 								</div>
 							</div>
 						</div>
-						<div class="outline">
+						<div id="bkadai" class="outline">
 							<div class="outline-name">
 								<ul class="kadailist">
-									<li><p id="bkadai" class="outline-text">課題B</p></li>	
+									<li><p class="outline-text">課題B</p></li>	
 									<li><p class="kadai-title">多種センサ・文書データ時系列解析からのエリア危険度の共有技術</p></li>
 								</ul>
 								<div class="outline-content"> 
 								</div>
 							</div>
 						</div>
-						<div class="outline">
+						<div id="ckadai" class="outline">
 							<div class="outline-name">
 								<ul class="kadailist">
-									<li><p id="ckadai" class="outline-text">課題C</p></li>	
+									<li><p class="outline-text">課題C</p></li>	
 									<li><p class="kadai-title">発災後の危険を住民に知らせる迅速な情報共有システム</p></li>
 								</ul>
 								<div class="outline-content"> 
 								</div>
 							</div>
 						</div>
-						<div class="outline">
+						<div id="dkadai" class="outline">
 							<div class="outline-name">
 								<ul class="kadailist">
-									<li><p id="dkadai" class="outline-text">課題D</p></li>	
+									<li><p class="outline-text">課題D</p></li>	
 									<li><p class="kadai-title">災害後の情報共有アプリケーションフレームワーク</p></li>
 								</ul>
 								<div class="outline-content"> 

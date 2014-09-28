@@ -1,6 +1,6 @@
 #floating-menu {
 	position: absolute;
-	width: 260px;
+	width: 250px;
 	top: 300px;
 	left: 5%;
 
@@ -15,6 +15,17 @@
 
 	z-index: 9999;
 }
+.midashi{
+	width: 100%;
+	height: 40px;
+	color: #ffffff;
+	margin: 0;
+	font-weight: bold;
+	font-size: large;
+	background-color: #003334;
+	padding-left: 35px;
+	padding-top: 8px;
+}
 #floating-menu ul{
 	list-style: none;
 	padding: 0;
@@ -24,8 +35,7 @@
 	display: block;
 }
 .menu-item{
-	border-bottom: 1px solid #ffffff; 
-	border-top: 1px solid #ffffff; 
+	border-bottom: 2px solid #ffffff; 
 }
 .menu-item-name{
 	position: absolute;
@@ -33,20 +43,23 @@
 	left: 50px;
 	font-weight: bold;
 }
+.last-item{
+	border: none;
+}
 #item-haikei{
-	top: 36px;
+	top: 46px;
 }
 #item-gruop{
-	top: 68px;
-}
-#item-iti{
-	top: 100px;
-}
-#item-mirai{
-	top: 132px;
+	top: 78px;
 }
 #item-mokuteki{
-	top: 164px;
+	top: 110px;
+}
+#item-iti{
+	top: 142px;
+}
+#item-mirai{
+	top: 174px;
 }
 #item-a{
 	bottom: 91px;

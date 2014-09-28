@@ -1,3 +1,7 @@
+body{
+	background-color: #b2d4d4;
+	min-width: 1200px;
+}
 header{
 	border-bottom: 5px solid #000;
 	border-top: 5px solid #000;
