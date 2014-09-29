@@ -73,9 +73,6 @@
 #item-d{
 	bottom: -5px;
 }
-#haikei{
-	overflow: auto;
-}
 .outline {
 	width: 90%;
 	height: 100%;
@@ -99,9 +96,10 @@
 	margin: 0;
 }
 .outline-content{
-	width: 90%;
+	width: 100%;
 	padding: 10px 5%;
 	border-top: solid 5px #282828;
+	overflow: auto;
 }
 #saigailist{
 	list-style: decimal;
@@ -109,6 +107,25 @@
 }
 #saigailist li{
 	float: none;
+}
+#gruoplist{
+	list-style: decimal;
+	margin: 0 0 10px 40px;
+}
+#gruoplist li{
+	float: none;
+}
+dd{
+	margin-left: 15px;
+}
+#group dd{
+	margin-left: 30px;
+}
+.nakamidashi{
+	margin-left: 15px;
+}
+.yakuwariname{
+	font-size: large;
 }
 .kadai-title{
 	padding: 5px 0 0 10px; 
@@ -119,4 +136,14 @@
 }
 .kadailist{
 	height: 25px;
+}
+.kadailist li{
+	height: 25px;
+}
+.kadaisyurui{
+	font-weight: bold;
+	font-size: large;
+}
+#mirai ul{
+	margin-left: 20px;
 }
