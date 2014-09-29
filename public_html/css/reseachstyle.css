@@ -1,6 +1,6 @@
 #floating-menu {
 	position: absolute;
-	width: 250px;
+	width: 22%;
 	top: 300px;
 	left: 5%;
 
@@ -29,13 +29,18 @@
 #floating-menu ul{
 	list-style: none;
 	padding: 0;
-	margin: 0;
 }
 #floating-menu{
 	display: block;
+	opacity: 0.7;
+}
+#floating-menu img{
+	width: 100%;
+	height: 30px;
 }
 .menu-item{
-	border-bottom: 2px solid #ffffff; 
+	/*border-bottom: 2px solid #ffffff;*/ 
+	margin-bottom: 2px;
 }
 .menu-item-name{
 	position: absolute;
@@ -47,31 +52,31 @@
 	border: none;
 }
 #item-haikei{
-	top: 46px;
+	top: 48px;
 }
 #item-gruop{
-	top: 78px;
+	top: 80px;
 }
 #item-mokuteki{
-	top: 110px;
+	top: 112px;
 }
 #item-iti{
-	top: 142px;
+	top: 144px;
 }
 #item-mirai{
-	top: 174px;
+	top: 176px;
 }
 #item-a{
-	bottom: 91px;
+	bottom: 142px;
 }
 #item-b{
-	bottom: 59px;
+	bottom: 110px;
 }
 #item-c{
-	bottom: 27px;
+	bottom: 78px;
 }
 #item-d{
-	bottom: -5px;
+	bottom: 46px;
 }
 .outline {
 	width: 90%;

@@ -1,320 +1,322 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>ProACT 実現に向けたアクティブ情報共有基盤と周辺技術</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/bootstrap.css" />
-    <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/reseachstyle.css" />
-    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
-    <script type="text/javascript" src="js/bootstrap.js" ></script>
-    <script type="text/javascript" src="js/jquery.js" ></script>
-    <script type="text/javascript" src="js/scrollmenu.js" ></script>
-  </head>
-  <body>
-    <header>
-      <div id="header-container">
-	<img id="headertitle" src="img/logo/ProACT.png" alt="ProACT" />
-	<nav>
-	  <ul>
-	    <li><a href="index.html"><img src="img/logo/Top.png" alt="Top" /></a></li>
-	    <li><a href="member.html"><img src="img/logo/Member.png" alt="Member" /></a></li>
-	    <li><a href="research.html"><img src="img/logo/Reseach.png" alt="Research" /></a></li>
-	    <li><a href="theday.html"><img src="img/logo/TheDay.png" alt="TheDay" /></a></li>
-	  </ul>
-	</nav>
-      </div>
-    </header>
+	<head>
+		<title>ProACT 実現に向けたアクティブ情報共有基盤と周辺技術</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<link rel="stylesheet" href="css/main.css" />
+		<link rel="stylesheet" href="css/reseachstyle.css" />
+		<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+		<script type="text/javascript" src="js/bootstrap.js" ></script>
+		<script type="text/javascript" src="js/jquery.js" ></script>
+		<script type="text/javascript" src="js/scrollmenu.js" ></script>
+	</head>
+	<body>
+		<div class="wrapper">
+			<header>
+				<div id="header-container">
+					<img id="headertitle" src="img/logo/ProACT.png" alt="ProACT" />
+					<nav>
+						<ul>
+							<li><a href="index.html"><img src="img/logo/Top.png" alt="Top" /></a></li>
+							<li><a href="member.html"><img src="img/logo/Member.png" alt="Member" /></a></li>
+							<li><a href="research.html"><img src="img/logo/Reseach.png" alt="Research" /></a></li>
+							<li><a href="theday.html"><img src="img/logo/TheDay.png" alt="TheDay" /></a></li>
+						</ul>
+					</nav>
+				</div>
+			</header>
 
-    <div class="container">
-      <div id="floating-menu">
-	<ul>
-	  <li>
-	    <a href="#kenkyunaiyo"><p class="midashi menu-item">研究内容</p></a>
-	    <ul>
-	      <li>
-		<a href="#haikei"><ul class="menu-item">
-		    <li><img src="img/migi.jpg" alt="migi" /></li>
-		    <li><p id="item-haikei" class="menu-item-name">研究の背景</p></li>
-		  </ul></a>
-	      </li>
-	      <li>
-		<a href="#group"><ul class="menu-item">
-		    <li><img src="img/migi.jpg" alt="migi" /></li>
-		    <li><p id="item-gruop" class="menu-item-name">研究グループ</p></li>
-		  </ul></a>
-	      </li>
-	      <li>
-		<a href="#mokuteki"><ul class="menu-item">
-		    <li><img src="img/migi.jpg" alt="migi" /></li>
-		    <li><p id="item-mokuteki" class="menu-item-name">研究の目的</p></li>
-		  </ul></a>
-	      </li>
-	      <li>
-		<a href="#itiduke"><ul class="menu-item">
-		    <li><img src="img/migi.jpg" alt="migi" /></li>
-		    <li><p id="item-iti" class="menu-item-name">研究の位置付け</p></li>
-		  </ul></a>
-	      </li>
-	      <li>
-		<a href="#mirai"><ul class="menu-item">
-		    <li><img src="img/migi.jpg" alt="migi" /></li>
-		    <li><p id="item-mirai" class="menu-item-name">研究の将来性</p></li>
-		  </ul></a>
-	      </li>
-	    </ul>
-	  </li>
-	  <li>
-	    <a href="#kenkyuhou"><p class="midashi menu-item">研究計画・方法</p></a>
-	    <ul>
-	      <li>
-		<a href="#akadai"><ul class="menu-item">
-		    <li><img src="img/migi.jpg" alt="migi" /></li>
-		    <li><p id="item-a" class="menu-item-name">課題A</p></li>
-		  </ul></a>
-	      </li>
-	      <li>
-		<a href="#bkadai"><ul class="menu-item">
-		    <li><img src="img/migi.jpg" alt="migi" /></li>
-		    <li><p id="item-b" class="menu-item-name">課題B</p></li>
-		  </ul></a>
-	      </li>
-	      <li>
-		<a href="#ckadai"><ul class="menu-item">
-		    <li><img src="img/migi.jpg" alt="migi" /></li>
-		    <li><p id="item-c" class="menu-item-name">課題C</p></li>
-		  </ul></a>
-	      </li>
-	      <li>
-		<a href="#dkadai"><ul class="menu-item last-item">
-		    <li><img src="img/migi.jpg" alt="migi" /></li>
-		    <li><p id="item-d" class="menu-item-name">課題D</p></li>
-		  </ul></a>
-	      </li>
-	    </ul>
-	  </li>
-	</ul>
-      </div>
-      <div class="row">
-	<div class="col-md-9 col-md-offset-3">
-	  <section id="kenkyunaiyo">
-	    <h2><span style="padding-left: 40px; ">研究内容</span></h2>
-	    <img class="border-img" src="img/name-border.jpg" alt="border" />
-	    <div id="haikei" class="outline">
-	      <div class="outline-name">
-		<p class="outline-text">研究の背景</p>	
-		<div class="outline-content"> 
-		  <p>既存の防災および災害対応に関するICTのフレームワークは，</p>
-		  <ul id="saigailist">
-		    <li>事前予測システム</li>
-		    <li>発災直後の対応</li>
-		    <li>発災後の長期的ケア</li>
-		  </ul>
-		  <p>の３つ分野が乖離され，別々の分野として取り扱われていた．
-		  </p><p>
-		    こういった現状はある程度予測される災害であっても連携と情報共有が有効に行われず，被災エリアの迅速な特定と二次災害リスクの計算や災害後の長期的支援や被災者支援者ケアと言う点の議論が欠如していたといえる．
-		    さらには設置コストと費用対効果が考慮される本来守るべき市民ひとりの目線ではなく，値段が高く高性能すぎるスペックや本来必要数より過剰に災害検知設備を投資してしまうなどの弊害があった．
-		  </p><p>
-		    本研究はそういった研究指向型で分断された防災減災システムを「発災前」，「発災直後」，「発災後」の<span class="strog-font">長期間を時系列で結び，実社会と人を中心に再構成する</span>ことを目的とする．</p><p>
-		    本研究分野は<span class="strog-font">Project for Active Communication and Technology Framework against Long-Term Disaster Problems:ProACT</span>と名付け異分野の専門家を中心に議論して研究を進める．
+			<div class="container">
+				<div id="floating-menu">
+					<ul>
+						<li>
+							<a href="#kenkyunaiyo"><p class="midashi menu-item">研究内容</p></a>
+							<ul>
+								<li>
+									<a href="#haikei"><ul class="menu-item">
+											<li><img src="img/migi.jpg" alt="migi" /></li>
+											<li><p id="item-haikei" class="menu-item-name">研究の背景</p></li>
+										</ul></a>
+								</li>
+								<li>
+									<a href="#group"><ul class="menu-item">
+											<li><img src="img/migi.jpg" alt="migi" /></li>
+											<li><p id="item-gruop" class="menu-item-name">研究グループ</p></li>
+										</ul></a>
+								</li>
+								<li>
+									<a href="#mokuteki"><ul class="menu-item">
+											<li><img src="img/migi.jpg" alt="migi" /></li>
+											<li><p id="item-mokuteki" class="menu-item-name">研究の目的</p></li>
+										</ul></a>
+								</li>
+								<li>
+									<a href="#itiduke"><ul class="menu-item">
+											<li><img src="img/migi.jpg" alt="migi" /></li>
+											<li><p id="item-iti" class="menu-item-name">研究の位置付け</p></li>
+										</ul></a>
+								</li>
+								<li>
+									<a href="#mirai"><ul class="menu-item">
+											<li><img src="img/migi.jpg" alt="migi" /></li>
+											<li><p id="item-mirai" class="menu-item-name">研究の将来性</p></li>
+										</ul></a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#kenkyuhou"><p class="midashi menu-item">研究計画・方法</p></a>
+							<ul>
+								<li>
+									<a href="#akadai"><ul class="menu-item">
+											<li><img src="img/migi.jpg" alt="migi" /></li>
+											<li><p id="item-a" class="menu-item-name">課題A</p></li>
+										</ul></a>
+								</li>
+								<li>
+									<a href="#bkadai"><ul class="menu-item">
+											<li><img src="img/migi.jpg" alt="migi" /></li>
+											<li><p id="item-b" class="menu-item-name">課題B</p></li>
+										</ul></a>
+								</li>
+								<li>
+									<a href="#ckadai"><ul class="menu-item">
+											<li><img src="img/migi.jpg" alt="migi" /></li>
+											<li><p id="item-c" class="menu-item-name">課題C</p></li>
+										</ul></a>
+								</li>
+								<li>
+									<a href="#dkadai"><ul class="menu-item last-item">
+											<li><img src="img/migi.jpg" alt="migi" /></li>
+											<li><p id="item-d" class="menu-item-name">課題D</p></li>
+										</ul></a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#matome"><p class="midashi menu-item">結論</p></a>
+						</li>
+					</ul>
+				</div>
+				<div class="row">
+					<div class="col-md-9 col-md-offset-3">
+						<section id="kenkyunaiyo">
+							<h2><span style="padding-left: 40px; ">研究内容</span></h2>
+							<img class="border-img" src="img/name-border.jpg" alt="border" />
+							<div id="haikei" class="outline">
+								<div class="outline-name">
+									<p class="outline-text">研究の背景</p>	
+									<div class="outline-content"> 
+										<p>既存の防災および災害対応に関するICTのフレームワークは，</p>
+										<ul id="saigailist">
+											<li>事前予測システム</li>
+											<li>発災直後の対応</li>
+											<li>発災後の長期的ケア</li>
+										</ul>
+										<p>の３つ分野が乖離され，別々の分野として取り扱われていた．
+										</p><p>
+											こういった現状はある程度予測される災害であっても連携と情報共有が有効に行われず，被災エリアの迅速な特定と二次災害リスクの計算や災害後の長期的支援や被災者支援者ケアと言う点の議論が欠如していたといえる．
+											さらには設置コストと費用対効果が考慮される本来守るべき市民ひとりの目線ではなく，値段が高く高性能すぎるスペックや本来必要数より過剰に災害検知設備を投資してしまうなどの弊害があった．
+										</p><p>
+											本研究はそういった研究指向型で分断された防災減災システムを「発災前」，「発災直後」，「発災後」の<span class="strog-font">長期間を時系列で結び，実社会と人を中心に再構成する</span>ことを目的とする．</p><p>
+											本研究分野は<span class="strog-font">Project for Active Communication and Technology Framework against Long-Term Disaster Problems:ProACT</span>と名付け異分野の専門家を中心に議論して研究を進める．
 
-		  </p>
-		</div>
-	      </div>
-	    </div>
-	    <div id="group" class="outline">
-	      <div class="outline-name">
-		<p class="outline-text">研究グループ</p>	
-		<div class="outline-content"> 
-		  <p>本グループは</p>
-		  <ul id="gruoplist">
-		    <li>長期的防災モニタリング基盤</li>
-		    <li>発災直後の情報共有基盤</li>
-		    <li>発災後の長期的支援基盤</li>
-		  </ul>
-		  <p>の3つの分野を詳しく掘り下げ，その上で連携を取り長期的な災害に対する情報共有基盤を構築する．</p>
-		  <p>また外部から，<span class="strog-font">酒井直樹</span>（独立行政法人 防災科学技術研究所 観測・予測研究領域 水・土砂防災研究ユニット 主任研究員）などを招き最新の土砂災害リスク管理について連携の議論を交わす．
-		  </p>
-		  <p>東京電機大学未来科学部情報メディア学科，ロボット・メカトロニクス分野，情報環境学部，企業から株式会社リプロ，東京大学から生産技術研究所のメンバが一同に会して災害の予測，現状把握，発災後の情報共有のあり方を一つのテーマとして結びつける本プロジェクトは他にはなく挑戦的でありかつ社会に有益な情報発信が行えるものといえる．</p>
-		  <p>以下に役割分担を示す．</p>
-		  <dl>
-		    <dt class="yakuwariname">岩井 将行</dt>
-		    <dt class="nakamidashi">分野</dt>
-		    <dd>【I長期的防災モニタリング基盤】，【II発災直後の情報共有基盤】，【III発災後の長期的支援基盤】</dd>
-		    <dt class="nakamidashi">具体的な内容</dt>
-		    <dd>災害検知センサネットワーク・二次災害遠隔モニタリングシステム・被災者・遠隔支援者コミュニケーションの検討</dd>
-		  </dl>
-		  <dl>
-		    <dt class="yakuwariname">小林 亘</dt>
-		    <dt class="nakamidashi">分野</dt>
-		    <dd>【I長期的防災モニタリング基盤】，【II発災直後の情報共有基盤】</dd>
-		    <dt class="nakamidashi">具体的な内容</dt>
-		    <dd>災害ビッグデータ分析・災害リスクマネージメント利活用検討</dd>
-		  </dl>
-		  <dl>
-		    <dt class="yakuwariname">武川 直樹</dt>
-		    <dt class="nakamidashi">分野</dt>
-		    <dd>【II発災直後の情報共有基盤】，【III発災後の長期的支援基盤】</dd>
-		    <dt class="nakamidashi">具体的な内容</dt>
-		    <dd>災害時・災害後コミュニケーション変化解析・災害時からの人間行動シミュレーション検討</dd>
-		  </dl>
-		  <dl>
-		    <dt class="yakuwariname">岩瀬 将美</dt>
-		    <dt class="nakamidashi">分野</dt>
-		    <dd>【I長期的防災モニタリング基盤】，【II発災直後の情報共有社会基盤】</dd>
-		    <dt class="nakamidashi">具体的な内容</dt>
-		    <dd>燃焼エンジン駆動によるバギーや電動自転車，ラジコンヘリコプタ等による自動災害現場調査手法検討</dd>
-		  </dl>
-		  <dl>
-		    <dt class="yakuwariname">岡田 謙吾</dt>
-		    <dt class="nakamidashi">分野</dt>
-		    <dd>【I長期的防災モニタリング基盤】，【III発災後の長期的支援基盤】</dd>
-		    <dt class="nakamidashi">具体的な内容</dt>
-		    <dd>防災用センサ杭・災害後ICタグフィールドマーカの展開</dd>
-		  </dl>
-		  <dl>
-		    <dt class="yakuwariname">伊藤 昌毅</dt>
-		    <dt class="nakamidashi">分野</dt>
-		    <dd>【II発災直後の情報共有基盤】，【III発災後の長期的支援基盤】</dd>
-		    <dt class="nakamidashi">具体的な内容</dt>
-		    <dd>発災後の人の移動モデル・高齢者移動モデルの生成の検討</dd>
-		  </dl>
-		</div>
-	      </div>
-	    </div>
-	    <div id="mokuteki" class="outline">
-	      <div class="outline-name">
-		<p class="outline-text">研究の目的</p>	
-		<div class="outline-content"> 
-		  <p>研究機関は１年間である，そのため全体としては新規分野開拓のためのフィージビリティスタディを行いその調査結果を持ち寄った報告書を完成させ本課題が分野統合的な課題として有用かつ挑戦的であり世の中にインパクトの大きい技術的なポイントをできるだけ多く示すことが目標になる．さらに本研究報告に記載する具体的な全体連携の青写真と部分的な連携システムを検討した結果を報告する予定である．</p>
-		  <p>具体的な内容として，<span class="strog-font">災害検知センサネットワーク・二次災害遠隔モニタリングシステム</span>では岩井，岩瀬，岡田らにより共同で掘り下げ，新しい移動型センサノードのアイディアを公開する．さらに<span class="strog-font">被災者・遠隔支援者コミュニケーションや人の移動をテーマ</span>に岩井，武川，伊藤らと掘り下げ研究分野を新たに設定する．また小林，伊藤，岡田，岩井らにより<span class="strog-font">様々な文書データを含めた災害データを統合し復興復旧状況を分析できる素案</span>を期間内に提案し大学内でも共同研究者を募る．</p>
-		  <p>本研究期間において調査や関係者との意見交換等によって<span class="strog-font">潜在的技術ニーズ，目指すべき方向，実現可能性</span>を明確にし，また，最前線で活躍する人々と意見交換を通じて本研究の認知度を高め，これをベースとして一つのチームとして実用化のための外部資金・研究費の確保に取り組む．</p>
+										</p>
+									</div>
+								</div>
+							</div>
+							<div id="group" class="outline">
+								<div class="outline-name">
+									<p class="outline-text">研究グループ</p>	
+									<div class="outline-content"> 
+										<p>本グループは</p>
+										<ul id="gruoplist">
+											<li>長期的防災モニタリング基盤</li>
+											<li>発災直後の情報共有基盤</li>
+											<li>発災後の長期的支援基盤</li>
+										</ul>
+										<p>の3つの分野を詳しく掘り下げ，その上で連携を取り長期的な災害に対する情報共有基盤を構築する．</p>
+										<p>また外部から，<span class="strog-font">酒井直樹</span>（独立行政法人 防災科学技術研究所 観測・予測研究領域 水・土砂防災研究ユニット 主任研究員）などを招き最新の土砂災害リスク管理について連携の議論を交わす．
+										</p>
+										<p>東京電機大学未来科学部情報メディア学科，ロボット・メカトロニクス分野，情報環境学部，企業から株式会社リプロ，東京大学から生産技術研究所のメンバが一同に会して災害の予測，現状把握，発災後の情報共有のあり方を一つのテーマとして結びつける本プロジェクトは他にはなく挑戦的でありかつ社会に有益な情報発信が行えるものといえる．</p>
+										<p>以下に役割分担を示す．</p>
+										<dl>
+											<dt class="yakuwariname">岩井 将行</dt>
+											<dt class="nakamidashi">分野</dt>
+											<dd>【I長期的防災モニタリング基盤】，【II発災直後の情報共有基盤】，【III発災後の長期的支援基盤】</dd>
+											<dt class="nakamidashi">具体的な内容</dt>
+											<dd>災害検知センサネットワーク・二次災害遠隔モニタリングシステム・被災者・遠隔支援者コミュニケーションの検討</dd>
+										</dl>
+										<dl>
+											<dt class="yakuwariname">小林 亘</dt>
+											<dt class="nakamidashi">分野</dt>
+											<dd>【I長期的防災モニタリング基盤】，【II発災直後の情報共有基盤】</dd>
+											<dt class="nakamidashi">具体的な内容</dt>
+											<dd>災害ビッグデータ分析・災害リスクマネージメント利活用検討</dd>
+										</dl>
+										<dl>
+											<dt class="yakuwariname">武川 直樹</dt>
+											<dt class="nakamidashi">分野</dt>
+											<dd>【II発災直後の情報共有基盤】，【III発災後の長期的支援基盤】</dd>
+											<dt class="nakamidashi">具体的な内容</dt>
+											<dd>災害時・災害後コミュニケーション変化解析・災害時からの人間行動シミュレーション検討</dd>
+										</dl>
+										<dl>
+											<dt class="yakuwariname">岩瀬 将美</dt>
+											<dt class="nakamidashi">分野</dt>
+											<dd>【I長期的防災モニタリング基盤】，【II発災直後の情報共有社会基盤】</dd>
+											<dt class="nakamidashi">具体的な内容</dt>
+											<dd>燃焼エンジン駆動によるバギーや電動自転車，ラジコンヘリコプタ等による自動災害現場調査手法検討</dd>
+										</dl>
+										<dl>
+											<dt class="yakuwariname">岡田 謙吾</dt>
+											<dt class="nakamidashi">分野</dt>
+											<dd>【I長期的防災モニタリング基盤】，【III発災後の長期的支援基盤】</dd>
+											<dt class="nakamidashi">具体的な内容</dt>
+											<dd>防災用センサ杭・災害後ICタグフィールドマーカの展開</dd>
+										</dl>
+										<dl>
+											<dt class="yakuwariname">伊藤 昌毅</dt>
+											<dt class="nakamidashi">分野</dt>
+											<dd>【II発災直後の情報共有基盤】，【III発災後の長期的支援基盤】</dd>
+											<dt class="nakamidashi">具体的な内容</dt>
+											<dd>発災後の人の移動モデル・高齢者移動モデルの生成の検討</dd>
+										</dl>
+									</div>
+								</div>
+							</div>
+							<div id="mokuteki" class="outline">
+								<div class="outline-name">
+									<p class="outline-text">研究の目的</p>	
+									<div class="outline-content"> 
+										<p>研究機関は１年間である，そのため全体としては新規分野開拓のためのフィージビリティスタディを行いその調査結果を持ち寄った報告書を完成させ本課題が分野統合的な課題として有用かつ挑戦的であり世の中にインパクトの大きい技術的なポイントをできるだけ多く示すことが目標になる．さらに本研究報告に記載する具体的な全体連携の青写真と部分的な連携システムを検討した結果を報告する予定である．</p>
+										<p>具体的な内容として，<span class="strog-font">災害検知センサネットワーク・二次災害遠隔モニタリングシステム</span>では岩井，岩瀬，岡田らにより共同で掘り下げ，新しい移動型センサノードのアイディアを公開する．さらに<span class="strog-font">被災者・遠隔支援者コミュニケーションや人の移動をテーマ</span>に岩井，武川，伊藤らと掘り下げ研究分野を新たに設定する．また小林，伊藤，岡田，岩井らにより<span class="strog-font">様々な文書データを含めた災害データを統合し復興復旧状況を分析できる素案</span>を期間内に提案し大学内でも共同研究者を募る．</p>
+										<p>本研究期間において調査や関係者との意見交換等によって<span class="strog-font">潜在的技術ニーズ，目指すべき方向，実現可能性</span>を明確にし，また，最前線で活躍する人々と意見交換を通じて本研究の認知度を高め，これをベースとして一つのチームとして実用化のための外部資金・研究費の確保に取り組む．</p>
 
-		</div>
-	      </div>
-	    </div>
-	    <div id="itiduke" class="outline">
-	      <div class="outline-name">
-		<p class="outline-text">研究の位置付け</p>	
-		<div class="outline-content"> 
+									</div>
+								</div>
+							</div>
+							<div id="itiduke" class="outline">
+								<div class="outline-name">
+									<p class="outline-text">研究の位置付け</p>	
+									<div class="outline-content"> 
 
-		  <p>3.11以降国内においては災害モニタリングの重要性や発災直後の情報の連携の欠点などがとりあげられて来た．</p>
-		  <p>例えば，官民協働の災害対応を実現する情報共有の仕組みと論点について防災科学技術研究所の長坂氏を中心に議論が行われているプロジェクトもある．しかし市民の視線を中心にモニタリングコスト，発災後の迅速な情報共有，災害後の情報支援の有りかたを長期的に考慮しているプロジェクトや研究成果はない．またそれぞれの国際的な研究も時系列的には個別に深く掘り下げており時系列で災害を捉えた分野の研究は少ない．さらに，住民に運用を任せる視点がなくコスト度外視の研究が多いため普及が進んでいないといえる．</p>
-		  <p>一方で本プロジェクトでは，災害ケア社会の実現に向けたアクティブ情報共有基盤は住民が長期的に災害モニタリングを行い，発災直後からの情報共有とその後の地域内外の連携も深く考慮していく新たな分野の産学連携のプロジェクトであるといえる．</p>
+										<p>3.11以降国内においては災害モニタリングの重要性や発災直後の情報の連携の欠点などがとりあげられて来た．</p>
+										<p>例えば，官民協働の災害対応を実現する情報共有の仕組みと論点について防災科学技術研究所の長坂氏を中心に議論が行われているプロジェクトもある．しかし市民の視線を中心にモニタリングコスト，発災後の迅速な情報共有，災害後の情報支援の有りかたを長期的に考慮しているプロジェクトや研究成果はない．またそれぞれの国際的な研究も時系列的には個別に深く掘り下げており時系列で災害を捉えた分野の研究は少ない．さらに，住民に運用を任せる視点がなくコスト度外視の研究が多いため普及が進んでいないといえる．</p>
+										<p>一方で本プロジェクトでは，災害ケア社会の実現に向けたアクティブ情報共有基盤は住民が長期的に災害モニタリングを行い，発災直後からの情報共有とその後の地域内外の連携も深く考慮していく新たな分野の産学連携のプロジェクトであるといえる．</p>
 
+									</div>
+								</div>
+							</div>
+							<div id="mirai" class="outline">
+								<div class="outline-name">
+									<p class="outline-text">研究の将来性</p>	
+									<div class="outline-content"> 
+										<p>今後，移動型災害調査センサロボット，災害モニタリングセンサの長期運用手法，二次災害防止センサとクラウドシステム，災害後の記録および支援者情報共有システムなどの特許化の可能性も検討し，将来的には取得を目指す一方，社会一般で必要とされる技術案はオープン化して国内外の研究者や開発者が参画し易い枠組みの構築を目指す．</p>
+										<p>また特許として出願しているものを以下に示す．</p>
+										<ul>
+											<li><span class="strog-font">杭を複数備えた移動体検知システム</span>（出願番号:2011-040282）</li>
+											<li><span class="strog-font">光透過性ＲＦＩＤ用アンテナ装置とそれを用いた家具及びシステム</span>（特許番号:5069506）</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</section>
+						<section id="kenkyuhou">
+							<h2><span style="padding-left: 40px; ">研究計画・方法</span></h2>
+							<img class="border-img" src="img/name-border.jpg" alt="border" />
+							<p style="text-align: center; ">本研究の目標はProACT:災害ケア社会の実現に向けたアクティブ情報共有基盤であり個別課題に分類し統合の議論を行う．</p>
+							<div id="akadai" class="outline">
+								<div class="outline-name">
+									<ul class="kadailist">
+										<li><p class="outline-text">課題A</p></li>	
+										<li><p class="kadai-title">長期的な防災センシング技術</p></li>
+									</ul>
+									<div class="outline-content"> 
+										<p><span class="kadaisyurui">【I長期的防災モニタリング基盤】</span></p>
+										<p>自然災害は，あらかじめ予測がむずかしい現状がある．そこで本課題では図の加速度センサだけでなく，気圧・温度湿度センサ，照度センサ，海面水位センサなどの情報を組み合わせ，動的に<span class="strog-font">データ計測間隔，送信間隔を変化させ長時間運用を可能にするシステム</span>を検討する．</p>
+										<p>また移動ロボットの検討をおこない複雑な地形で展開できるシステムの議論を行う．</p>
+										<dl>
+											<dt>担当研究者</dt>
+											<dd>岩井 将行，岩瀬 将美</dd>
+										</dl>
+									</div>
+								</div>
+							</div>
+							<div id="bkadai" class="outline">
+								<div class="outline-name">
+									<ul class="kadailist">
+										<li><p class="outline-text">課題B</p></li>	
+										<li><p class="kadai-title">多種センサ・文書データ時系列解析からのエリア危険度の共有技術</p></li>
+									</ul>
+									<div class="outline-content"> 
+										<p><span class="kadaisyurui">【II発災直後の情報共有基盤】</span></p>
+										<p>課題Cの図のような，先端部に6軸方向の加速度センサおよび水位センサが<span class="strog-font">複合的に</span>取り付けてあり回転加速度も計測する．</p>
+										<p>加速度が示す値は土質や水量などの物理現象によって異なるため網羅的にパターンを計測し崩落や水位の危険性を気象と合せて統合的に予測することを検討する．また各種オンライン工事データSNSの解析結果を組み込むことを検討する．</p>
+										<dl>
+											<dt>担当研究者</dt>
+											<dd>岩井 将行，岩瀬 将美，小林 亘，岡田 謙吾</dd>
+										</dl>
+									</div>
+								</div>
+							</div>
+							<div id="ckadai" class="outline">
+								<div class="outline-name">
+									<ul class="kadailist">
+										<li><p class="outline-text">課題C</p></li>	
+										<li><p class="kadai-title">発災後の危険を住民に知らせる迅速な情報共有システム</p></li>
+									</ul>
+									<div class="outline-content"> 
+										<p><span class="kadaisyurui">【II発災直後の情報共有基盤】</span></p>
+										<p>地滑り検知を可能する6軸の加速度センサおよび水位の情報を上流の危険地域から下流の地域まで通信を用いて<span class="strog-font">広域に遠隔の民家に対して迅速・確実に伝達するシステムについて検討する．</span></p>
+										<dl>
+											<dt>担当研究者</dt>
+											<dd>岩井 将行，岡田 謙吾，伊藤 昌毅</dd>
+										</dl>
+										<div class="row">
+											<div class="col-md-6 col-md-offset-3">
+												<img src="img/sensor.png" alt="図" />
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div id="dkadai" class="outline">
+								<div class="outline-name">
+									<ul class="kadailist">
+										<li><p class="outline-text">課題D</p></li>	
+										<li><p class="kadai-title">災害後の情報共有アプリケーションフレームワーク</p></li>
+									</ul>
+									<div class="outline-content"> 
+										<p><span class="kadaisyurui">【III発災後の長期的支援基盤】</span></p>
+										<p>沿岸部の災害情報や地滑り災害を検知した場合に素早く住民に周知する方法を議論する．通知には受動的な地域ブロードキャスティング通知と能動的なNFCなどのICタグを用いた情報獲得・共有手法を準備する(参考下図)．またSNSやコミュニケーション分類，高齢者の移動モデルを組みあわせて災害後の情報共有基盤を深く災害ごとに検討する（伊藤，武川，岩井）．</p>
+										<dl>
+											<dt>担当研究者</dt>
+											<dd>岩井 将行，武川 直樹，伊藤 昌毅</dd>
+										</dl>
+										<div class="row">
+											<div class="col-md-8 col-md-offset-2">
+												<img src="img/nfcqrsystem.png" alt="図" />
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+						<section id="matome">
+							<h2><span style="padding-left: 40px; ">結論</span></h2>
+							<img class="border-img" src="img/name-border.jpg" alt="border" />
+							<div class="outline">
+								<p>多くの既存のシステムはコスト面を度外視し，有線ケーブルや巨大な装置を用いて山間部や沿岸部の一部を記録計測できないのに対して，無線センサを用いた手法は，低コストで省電力機能を備え無線通信により安定的にデータをリアルタイムに伝達できる優位点があり他機関では研究されていない．本研究で過去の研究資産も活用できる優位点もある．</p>
+								<p>成果としてシミュレーションソフトウエアの検討事項，省電力化運用技術やセンサデータの時系列分析などの新たなアイディア．また住民や，災害時の道路復旧の効率化，2次災害を防ぐことが目標とし，山間部や河川・沿岸領域エリアや工事現場での防災・安全に寄与アイディアを提案する．</p>
+								<p>本研究は長期的情報共有システム新分野をテーマとしてワークショップH26年5月・11月に開催し外部有識者を交えて現状不足している技術に関して議論を行う，また被災地を含めた調査を行い，その報告書を共同執筆する．</p>
+							</div>
+						</section>
+					</div>
+				</div>
+			</div>
 		</div>
-	      </div>
-	    </div>
-	    <div id="mirai" class="outline">
-	      <div class="outline-name">
-		<p class="outline-text">研究の将来性</p>	
-		<div class="outline-content"> 
-		  <p>今後，移動型災害調査センサロボット，災害モニタリングセンサの長期運用手法，二次災害防止センサとクラウドシステム，災害後の記録および支援者情報共有システムなどの特許化の可能性も検討し，将来的には取得を目指す一方，社会一般で必要とされる技術案はオープン化して国内外の研究者や開発者が参画し易い枠組みの構築を目指す．</p>
-		  <p>また特許として出願しているものを以下に示す．</p>
-		  <ul>
-		    <li><span class="strog-font">杭を複数備えた移動体検知システム</span>（出願番号:2011-040282）</li>
-		    <li><span class="strog-font">光透過性ＲＦＩＤ用アンテナ装置とそれを用いた家具及びシステム</span>（特許番号:5069506）</li>
-		  </ul>
-		</div>
-	      </div>
-	    </div>
-	  </section>
-	  <section id="kenkyuhou">
-	    <h2><span style="padding-left: 40px; ">研究計画・方法</span></h2>
-	    <img class="border-img" src="img/name-border.jpg" alt="border" />
-	    <p style="text-align: center; ">本研究の目標はProACT:災害ケア社会の実現に向けたアクティブ情報共有基盤であり個別課題に分類し統合の議論を行う．</p>
-	    <div id="akadai" class="outline">
-	      <div class="outline-name">
-		<ul class="kadailist">
-		  <li><p class="outline-text">課題A</p></li>	
-		  <li><p class="kadai-title">長期的な防災センシング技術</p></li>
-		</ul>
-		<div class="outline-content"> 
-		  <p><span class="kadaisyurui">【I長期的防災モニタリング基盤】</span></p>
-		  <p>自然災害は，あらかじめ予測がむずかしい現状がある．そこで本課題では図の加速度センサだけでなく，気圧・温度湿度センサ，照度センサ，海面水位センサなどの情報を組み合わせ，動的に<span class="strog-font">データ計測間隔，送信間隔を変化させ長時間運用を可能にするシステム</span>を検討する．</p>
-		  <p>また移動ロボットの検討をおこない複雑な地形で展開できるシステムの議論を行う．</p>
-		  <dl>
-		    <dt>担当研究者</dt>
-		    <dd>岩井 将行，岩瀬 将美</dd>
-		  </dl>
-		</div>
-	      </div>
-	    </div>
-	    <div id="bkadai" class="outline">
-	      <div class="outline-name">
-		<ul class="kadailist">
-		  <li><p class="outline-text">課題B</p></li>	
-		  <li><p class="kadai-title">多種センサ・文書データ時系列解析からのエリア危険度の共有技術</p></li>
-		</ul>
-		<div class="outline-content"> 
-		  <p><span class="kadaisyurui">【II発災直後の情報共有基盤】</span></p>
-		  <p>課題Cの図のような，先端部に6軸方向の加速度センサおよび水位センサが<span class="strog-font">複合的に</span>取り付けてあり回転加速度も計測する．</p>
-		  <p>加速度が示す値は土質や水量などの物理現象によって異なるため網羅的にパターンを計測し崩落や水位の危険性を気象と合せて統合的に予測することを検討する．また各種オンライン工事データSNSの解析結果を組み込むことを検討する．</p>
-		  <dl>
-		    <dt>担当研究者</dt>
-		    <dd>岩井 将行，岩瀬 将美，小林 亘，岡田 謙吾</dd>
-		  </dl>
-		</div>
-	      </div>
-	    </div>
-	    <div id="ckadai" class="outline">
-	      <div class="outline-name">
-		<ul class="kadailist">
-		  <li><p class="outline-text">課題C</p></li>	
-		  <li><p class="kadai-title">発災後の危険を住民に知らせる迅速な情報共有システム</p></li>
-		</ul>
-		<div class="outline-content"> 
-		  <p><span class="kadaisyurui">【II発災直後の情報共有基盤】</span></p>
-		  <p>地滑り検知を可能する6軸の加速度センサおよび水位の情報を上流の危険地域から下流の地域まで通信を用いて<span class="strog-font">広域に遠隔の民家に対して迅速・確実に伝達するシステムについて検討する．</span></p>
-		  <div class="row">
-		    <div class="col-md-6">
-		      <dl>
-			<dt>担当研究者</dt>
-			<dd>岩井 将行，岡田 謙吾，伊藤 昌毅</dd>
-		      </dl>
-		    </div>
-		    <div class="col-md-6">
-		      <img src="img/sensor.png" alt="図" />
-		    </div>
-		  </div>
-		</div>
-	      </div>
-	    </div>
-	    <div id="dkadai" class="outline">
-	      <div class="outline-name">
-		<ul class="kadailist">
-		  <li><p class="outline-text">課題D</p></li>	
-		  <li><p class="kadai-title">災害後の情報共有アプリケーションフレームワーク</p></li>
-		</ul>
-		<div class="outline-content"> 
-		  <p><span class="kadaisyurui">【III発災後の長期的支援基盤】</span></p>
-		  <p>沿岸部の災害情報や地滑り災害を検知した場合に素早く住民に周知する方法を議論する．通知には受動的な地域ブロードキャスティング通知と能動的なNFCなどのICタグを用いた情報獲得・共有手法を準備する(参考下図)．またSNSやコミュニケーション分類，高齢者の移動モデルを組みあわせて災害後の情報共有基盤を深く災害ごとに検討する（伊藤，武川，岩井）．</p>
-		  <div class="row">
-		    <div class="col-md-5">
-		      <dl>
-			<dt>担当研究者</dt>
-			<dd>岩井 将行，武川 直樹，伊藤 昌毅</dd>
-		      </dl>
-		    </div>
-		    <div class="col-md-7">
-		      <img src="img/nfcqrsystem.png" alt="図" />
-		    </div>
-		  </div>
-		</div>
-	      </div>
-	    </div>
-	  </section>
-	  <section id="matome">
-	    <img class="border-img" src="img/name-border.jpg" alt="border" />
-	    <div class="outline">
-	      <p>多くの既存のシステムはコスト面を度外視し，有線ケーブルや巨大な装置を用いて山間部や沿岸部の一部を記録計測できないのに対して，無線センサを用いた手法は，低コストで省電力機能を備え無線通信により安定的にデータをリアルタイムに伝達できる優位点があり他機関では研究されていない．本研究で過去の研究資産も活用できる優位点もある．</p>
-	      <p>成果としてシミュレーションソフトウエアの検討事項，省電力化運用技術やセンサデータの時系列分析などの新たなアイディア．また住民や，災害時の道路復旧の効率化，2次災害を防ぐことが目標とし，山間部や河川・沿岸領域エリアや工事現場での防災・安全に寄与アイディアを提案する．</p>
-	      <p>本研究は長期的情報共有システム新分野をテーマとしてワークショップH26年5月・11月に開催し外部有識者を交えて現状不足している技術に関して議論を行う，また被災地を含めた調査を行い，その報告書を共同執筆する．</p>
-	    </div>
-	  </section>
-	</div>
-      </div>
-    </div>
-  </body>
+	</body>
 </html>

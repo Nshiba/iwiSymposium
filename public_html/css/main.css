@@ -1,6 +1,9 @@
 body{
-	background-color: #b2d4d4;
+	background-image: url("../img/triangular.png");
 	/*min-width: 1200px;*/
+}
+.wrapper{
+	background-color: rgba(255,255,255,0.5); 
 }
 header{
 	border-bottom: 5px solid #000;
@@ -40,7 +43,7 @@ header img{
 }
 section{
 	height: 100%;
-	margin-bottom: 50px;
+	margin-bottom: 20px;
 }
 .border-img{
 	width: 100%;
