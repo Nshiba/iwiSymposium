@@ -8,57 +8,58 @@
 		<link rel="stylesheet" href="css/main.css" />
 		<link rel="stylesheet" href="css/reseachstyle.css" />
 		<script type="text/javascript" src="https://www.google.com/jsapi"></script>
-		<script type="text/javascript" src="js/bootstrap.js" ></script>
 		<script type="text/javascript" src="js/jquery.js" ></script>
+		<script type="text/javascript" src="js/bootstrap.js" ></script>
 		<script type="text/javascript" src="js/scrollmenu.js" ></script>
 	</head>
 	<body>
-		<div class="wrapper">
 			<header>
-				<div id="header-container">
-					<img id="headertitle" src="img/logo/ProACT.png" alt="ProACT" />
-					<nav>
-						<ul>
-							<li><a href="index.html"><img src="img/logo/Top.png" alt="Top" /></a></li>
-							<li><a href="member.html"><img src="img/logo/Member.png" alt="Member" /></a></li>
-							<li><a href="research.html"><img src="img/logo/Reseach.png" alt="Research" /></a></li>
-							<li><a href="theday.html"><img src="img/logo/TheDay.png" alt="TheDay" /></a></li>
-						</ul>
-					</nav>
+				<div id="headertitle">
+					<img src="img/mainlogo_white.png" alt="ProACT" />
+					<p>実現に向けたアクティブ情報共有基盤と周辺技術</p>
 				</div>
+				<nav>
+					<ul>
+						<li><a href="index.html"><img src="img/logo/Top_white.png" onmouseover="this.src='img/logo/Top.png'" onmouseout="this.src='img/logo/Top_white.png'" alt="Top" /></a></li>
+						<li><a href="member.html"><img src="img/logo/Member_white.png" onmouseover="this.src='img/logo/Member.png'" onmouseout="this.src='img/logo/Member_white.png'" alt="Member" /></a></li>
+						<li id="thispage"><a href="research.html"><img src="img/logo/Reseach.png" alt="Research" /></a></li>
+						<li><a href="theday.html"><img src="img/logo/TheDay_white.png" onmouseover="this.src='img/logo/TheDay.png'" onmouseout="this.src='img/logo/TheDay_white.png'" alt="TheDay" /></a></li>
+					</ul>
+				</nav>
 			</header>
 
+		<div class="wrapper">
 			<div class="container">
 				<div id="floating-menu">
 					<ul>
 						<li>
-							<a href="#kenkyunaiyo"><p class="midashi menu-item">研究内容</p></a>
+							<a href="#kenkyunaiyo"><p id="nav-naiyo" class="midashi menu-item select">研究内容</p></a>
 							<ul>
-								<li>
+								<li id="nav-haikei" class="noselect">
 									<a href="#haikei"><ul class="menu-item">
 											<li><img src="img/migi.jpg" alt="migi" /></li>
 											<li><p id="item-haikei" class="menu-item-name">研究の背景</p></li>
 										</ul></a>
 								</li>
-								<li>
+								<li id="nav-group" class="noselect">
 									<a href="#group"><ul class="menu-item">
 											<li><img src="img/migi.jpg" alt="migi" /></li>
 											<li><p id="item-gruop" class="menu-item-name">研究グループ</p></li>
 										</ul></a>
 								</li>
-								<li>
+								<li id="nav-mokuteki" class="noselect">
 									<a href="#mokuteki"><ul class="menu-item">
 											<li><img src="img/migi.jpg" alt="migi" /></li>
 											<li><p id="item-mokuteki" class="menu-item-name">研究の目的</p></li>
 										</ul></a>
 								</li>
-								<li>
+								<li id="nav-iti" class="noselect">
 									<a href="#itiduke"><ul class="menu-item">
 											<li><img src="img/migi.jpg" alt="migi" /></li>
 											<li><p id="item-iti" class="menu-item-name">研究の位置付け</p></li>
 										</ul></a>
 								</li>
-								<li>
+								<li id="nav-mirai" class="noselect">
 									<a href="#mirai"><ul class="menu-item">
 											<li><img src="img/migi.jpg" alt="migi" /></li>
 											<li><p id="item-mirai" class="menu-item-name">研究の将来性</p></li>
@@ -67,27 +68,27 @@
 							</ul>
 						</li>
 						<li>
-							<a href="#kenkyuhou"><p class="midashi menu-item">研究計画・方法</p></a>
+							<a href="#kenkyuhou"><p id="nav-houhou" class="midashi menu-item noselect">研究計画・方法</p></a>
 							<ul>
-								<li>
+								<li id="nav-a" class="noselect">
 									<a href="#akadai"><ul class="menu-item">
 											<li><img src="img/migi.jpg" alt="migi" /></li>
 											<li><p id="item-a" class="menu-item-name">課題A</p></li>
 										</ul></a>
 								</li>
-								<li>
+								<li id="nav-b" class="noselect">
 									<a href="#bkadai"><ul class="menu-item">
 											<li><img src="img/migi.jpg" alt="migi" /></li>
 											<li><p id="item-b" class="menu-item-name">課題B</p></li>
 										</ul></a>
 								</li>
-								<li>
+								<li id="nav-c" class="noselect">
 									<a href="#ckadai"><ul class="menu-item">
 											<li><img src="img/migi.jpg" alt="migi" /></li>
 											<li><p id="item-c" class="menu-item-name">課題C</p></li>
 										</ul></a>
 								</li>
-								<li>
+								<li id="nav-d" class="noselect">
 									<a href="#dkadai"><ul class="menu-item last-item">
 											<li><img src="img/migi.jpg" alt="migi" /></li>
 											<li><p id="item-d" class="menu-item-name">課題D</p></li>
@@ -96,7 +97,7 @@
 							</ul>
 						</li>
 						<li>
-							<a href="#matome"><p class="midashi menu-item">結論</p></a>
+							<a href="#matome"><p id="nav-matome" class="midashi menu-item noselect">結論</p></a>
 						</li>
 					</ul>
 				</div>
@@ -318,5 +319,6 @@
 				</div>
 			</div>
 		</div>
+		<div id="back-top"><a href="#"><span></span></a></div>
 	</body>
 </html>

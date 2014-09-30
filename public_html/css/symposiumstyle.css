@@ -1,0 +1,47 @@
+#midaishi{
+	text-align: center;
+}
+#midaishi img{
+	margin-bottom: 20px;
+}
+img{
+	width: 100%;
+}
+.content{
+	margin-left: 5%;
+	font-size: larger;
+}
+dl{
+	border-bottom: 1px solid #808080;
+}
+dt{
+	font-weight: bolder;
+	border-top: 1px solid #808080;
+	padding: 10px 0 0 20px;
+}
+dd{
+	margin-left: 15px;
+	padding: 0 0 10px 20px;
+}
+#schedule{
+	font-size: larger;
+}
+.schedule-itme{
+	margin-bottom: 0;
+}
+.nakami{
+	width: 94%;
+	margin-left: 3%;
+}
+.kyukei{
+	border-top: 2px solid #000000;
+	border-bottom: 2px solid #000000;
+}
+.kyukei dl{
+	border: 0;
+	margin: 0;
+}
+.kyukei dt{
+	border: 0;
+	margin: 0;
+}

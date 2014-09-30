@@ -30,13 +30,18 @@
 	list-style: none;
 	padding: 0;
 }
-#floating-menu{
+#floating-menu{ 
 	display: block;
-	opacity: 0.7;
 }
 #floating-menu img{
 	width: 100%;
 	height: 30px;
+}
+.select{
+	opacity: 0.9;
+}
+.noselect{
+	opacity: 0.3;
 }
 .menu-item{
 	/*border-bottom: 2px solid #ffffff;*/ 
@@ -151,4 +156,7 @@ dd{
 }
 #mirai ul{
 	margin-left: 20px;
+}
+#matome{
+	margin-top: 80px;
 }
