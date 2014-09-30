@@ -23,6 +23,11 @@ dd{
 	margin-left: 15px;
 	padding: 0 0 10px 20px;
 }
+#contact-img{
+	margin: 10px 0;
+	padding: 0;
+	width: 100%;
+}
 #schedule{
 	font-size: larger;
 }
@@ -36,6 +41,9 @@ dd{
 .kyukei{
 	border-top: 2px solid #000000;
 	border-bottom: 2px solid #000000;
+	text-align: center;
+	font-size: larger;
+	font-weight: bolder;
 }
 .kyukei dl{
 	border: 0;
