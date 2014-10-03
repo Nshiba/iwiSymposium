@@ -1,10 +1,12 @@
 body{
 	/*background-image: url("../img/triangular.png");*/
+	/*background-image: url("../img/congruent_pentagon.png");*/
+	background-image: url("../img/az_subtle.png");
 }
 #back-top{
 	position: fixed;
 	bottom: 5px;
-	margin-left: 85%;
+	margin-left: 90%;
 }
 #back-top span{
 	width: 70px;
@@ -21,52 +23,85 @@ body{
 .wrapper{
 	background-color: rgba(255,255,255,0.5); 
 }
+.margin-item{
+	height: 20px;
+}
 header{
-	border-bottom: 5px solid #000;
-	border-top: 5px solid #000;
-	height: 200px;
-	color: #ffffff;
-	background-color: rgba(0,0,0,0.4); 
+	border-bottom: 2px solid #000;
+	border-top: 2px solid #000;
+	height: 150px;
+	/*color: #003334;*/
+	/*background-color: rgba(0,0,0,0.1);*/ 
+	background-color: rgba(255,255,255,0.8); 
+}
+#headerwrapper{
+	height: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
 }
 #headertitle{
+	height: 100%;
 	float: left;
 	width: 40%;
 	margin-left: 5%;
 	text-align: center;
+	font-style: oblique
 }
-#headertitle img{
-	width: 70%;
-	height: 100%;
-	margin-top: 30px;
-}
-#headertitle p{
-	font-size: x-large;
-	margin-top: 10px;
-	font-weight: bold;
+#headertitle h1{
+	margin: 0;
+	margin-top: 45px;
 }
 header nav ul{
+	height: 100%;
 	right: 5%;
 	padding: 0;
 	float: right;
 	list-style: none;
 	width: 45%;
-	height: 190px;
-	border-left: 1px solid #fff;
-	/*border-left: 1px solid #000;*/
+	height: 148px;
+	/*border-left: 1px solid #fff;*/
+	border-left: 1px solid #000;
 }
 header nav li{
 	float: left;
 	width: 20%;
-	height: 100%;
-	border-right: 1px solid #fff;
-	/*border-right: 1px solid #000;*/
+	height: 146px;
+	/*border-right: 1px solid #fff;*/
+	border-right: 1px solid #000;
+	min-width: 110px;
+}
+header nav p{
+	height: 20px;
+	width: 100%;
+	margin: 0;
+	padding: 61px 0 85px 0;
+	text-align: center;
+	font-size: large;
+	color: #003334;
+	font-style: oblique;
+}
+header nav a p:hover{
+	color: #ffffff;
+}
+header nav a:hover{
+	text-decoration: none;
 }
 header nav li:hover{
-	/*background-color: rgba(0,0,0, 0.1);*/
-	background-color: rgba(255,255,255, 0.9);
+	/*background-color: rgba(0,103,102, 0.7);*/
+	/*background-color: rgba(255,255,255, 0.9);*/
+	background: -webkit-gradient(linear, left top, right bottom, from(#00989b), color-stop(0.25, #00989b), color-stop(0.25, white), color-stop(0.5, white), color-stop(0.5, #00989b), color-stop(0.75, #00989b), color-stop(0.75, white), to(white));
+	background: -moz-linear-gradient(-45deg, #00989b 25%, white 25%, white 50%, #00989b 50%, #00989b 75%, white 75%, white);
+	background: linear-gradient(-45deg, #00989b 25%, white 25%, white 50%, #00989b 50%, #00989b 75%, white 75%, white);
+	background-size: 4px 4px;
 }
 #thispage{
-	background-color: rgba(255,255,255, 0.9);
+	background: -webkit-gradient(linear, left top, right bottom, from(#00989b), color-stop(0.25, #00989b), color-stop(0.25, white), color-stop(0.5, white), color-stop(0.5, #00989b), color-stop(0.75, #00989b), color-stop(0.75, white), to(white));
+	background: -moz-linear-gradient(-45deg, #00989b 25%, white 25%, white 50%, #00989b 50%, #00989b 75%, white 75%, white);
+	background: linear-gradient(-45deg, #00989b 25%, white 25%, white 50%, #00989b 50%, #00989b 75%, white 75%, white);
+	background-size: 4px 4px;
+}
+#thispage p{
+	color: #ffffff;
 }
 nav img{
 	width: 90%;

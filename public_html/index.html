@@ -6,27 +6,58 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="css/bootstrap.css" />
 		<link rel="stylesheet" href="css/main.css" />
+		<link rel="stylesheet" href="css/indexstyle.css" />
+		<link rel="stylesheet" href="css/owl.carousel.css" />
+		<link rel="stylesheet" href="css/owl.theme.css" />
+
 		<script type="text/javascript" src="https://www.google.com/jsapi"></script>
-		<script type="text/javascript" src="js/bootstrap.js" ></script>
 		<script type="text/javascript" src="js/jquery.js" ></script>
+		<script type="text/javascript" src="js/bootstrap.js" ></script>
 		<script type="text/javascript" src="js/top.js"></script>
+		<script type="text/javascript" src="js/owl.carousel.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('#proact').hide();
+				$('#project').hide();
+				$('#communi').hide();
+				$('#tech').hide();
+				
+				$('#proact').fadeIn(2000);
+				$('#project').delay(500).fadeIn(2000);
+				$('#communi').delay(1000).fadeIn(2000);
+				$('#tech').delay(1500).fadeIn(2000);
+			});
+		</script>
 	</head>
 	<body>
-		<header>
-			<div id="headertitle">
-				<img src="img/mainlogo_white.png" alt="ProACT" />
-				<p>実現に向けたアクティブ情報共有基盤と周辺技術</p>
-			</div>
-			<nav>
-				<ul>
-					<li id="thispage"><a href="index.html"><img src="img/logo/Top.png" alt="Top" /></a></li>
-					<li><a href="member.html"><img src="img/logo/Member_white.png" onmouseover="this.src = 'img/logo/Member.png'" onmouseout="this.src = 'img/logo/Member_white.png'" alt="Member" /></a></li>
-					<li><a href="research.html"><img src="img/logo/Reseach_white.png" onmouseover="this.src = 'img/logo/Reseach.png'" onmouseout="this.src = 'img/logo/Reseach_white.png'" alt="Research" /></a></li>
-					<li><a href="theday.html"><img src="img/logo/TheDay_white.png" onmouseover="this.src = 'img/logo/TheDay.png'" onmouseout="this.src = 'img/logo/TheDay_white.png'" alt="TheDay" /></a></li>
-				</ul>
-			</nav>
-		</header>
 		<div class="wrapper">
+			<header>
+				<div id="headerwrapper">
+					<div id="headertitle">
+						<h1>ProACT</h1>
+						<p>実現に向けたアクティブ情報共有基盤と周辺技術</p>
+					</div>
+					<nav>
+						<ul>
+							<li id="thispage"><a href="index.html"><p>Top</p></a></li>
+							<li><a href="member.html"><p>Member</p></a></li>
+							<li><a href="research.html"><p>Reserch</p></a></li>
+							<li><a href="theday.html"><p>Symposium</p></a></li>
+						</ul>
+					</nav>
+				</div>
+			</header>
+			<div class="margin"></div>
+			<div class="container">
+				<div class="row">
+					<img id="proact" class="col-md-4 col-md-offset-1" src="img/logo/ProACT.png" alt="ProACT" />
+					<div class="row">
+						<img id="project" class="col-md-2 col-md-offset-1" src="img/logo/pfa.png" alt="Project for Active" />
+						<img id="communi" class="col-md-2 col-md-offset-2" src="img/logo/communication.png" alt="Communication" />
+						<img id="tech" class="col-md-2 col-md-offset-3" src="img/logo/technology.png" alt="Technology" />
+					</div>
+				</div>
+			</div>
 		</div>
 		<div id="back-top"><a href="#"><span></span></a></div>
 	</body>
