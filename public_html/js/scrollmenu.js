@@ -1,4 +1,5 @@
 $(document).ready(function() {
+	//menuの処理
 	var menu = $('div#floating-menu');
 	var offset = menu.offset().top;
 
@@ -18,6 +19,26 @@ $(document).ready(function() {
 			menu.css('top', coodinates);
 		}
 	});
+
+//Topへボタンの処理
+	$("#back-top").hide();
+
+	$(function() {
+		$(window).scroll(function() {
+			if ($(this).scrollTop() > 1000) {
+				$('#back-top').fadeIn();
+			} else {
+				$('#back-top').fadeOut();
+			}
+		});
+		$('#back-top a').click(function() {
+			$('body,html').animate({
+				scrollTop: 0
+			}, 400);
+			selectOpacity(0);
+			return false;
+		});
+	});
 });
 
 $(function() {
@@ -32,9 +53,9 @@ $(function() {
 });
 
 $(function() {
-	var navlist = new Array('#nav-naiyo', '#nav-haikei', '#nav-group', '#nav-mokuteki', '#nav-iti', '#nav-mirai', '#nav-houhou', '#nav-a', '#nav-b', '#nav-c', 'n#av-d', 'n#av-matome');
+	var navlist = new Array('#nav-naiyo', '#nav-haikei', '#nav-group', '#nav-mokuteki', '#nav-iti', '#nav-mirai', '#nav-houhou', '#nav-a', '#nav-b', '#nav-c', '#nav-d', '#nav-matome');
 	var midashilist = new Array('#kenkyunaiyo', '#haikei', '#group', '#mokuteki', '#itiduke', '#mirai', '#kenkyuhou', '#akadai', '#bkadai', '#ckadai', '#dkadai', '#matome');
-	$(window).scroll(function() {
+	$(window).scroll(function(result) {
 		for (var i = 0; i < navlist.length; i++) {
 			if ($(window).scrollTop() >= $(midashilist[i]).offset().top - 100 && $(midashilist[i + 1]).offset().top - 100 >= $(window).scrollTop()) {
 				for (var j = 0; j < navlist.length; j++) {
@@ -42,6 +63,16 @@ $(function() {
 				}
 				selectOpacity(navlist[i]);
 			}
+		}
+
+		var $window = $(result.currentTarget);
+		height = $window.height();
+		scrollTop = $window.scrollTop();
+		documentHeight = $(document).height();
+		//一番下の処理
+		if (documentHeight === height + scrollTop) {
+			selectOpacity(navlist[navlist.length-1]);
+			noselectOpacity(navlist[navlist.length-2]);
 		}
 	});
 });
@@ -52,9 +83,6 @@ function selectOpacity(element) {
 }
 
 function noselectOpacity(element) {
-//	$(element).fadeOut(500, function() {
-//		$(element).removeClass('select');
-//	});
 	$(element).removeClass('select');
 	$(element).addClass('noselect');
 }

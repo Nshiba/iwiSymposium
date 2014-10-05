@@ -1,7 +1,13 @@
 body{
 	height: 100%;
 }
+section{
+	margin: 0;
+}
 .margin{
 	width: 100%;
 	height: 50px;
+}
+.eigo{
+	font-style: oblique;
 }

@@ -136,3 +136,8 @@ section{
 .strog-font{
 	font-weight: bold;
 }
+footer{
+	margin-top: 50px;
+	padding: 10px;
+	border-top: 1px solid #cccccc;
+}
